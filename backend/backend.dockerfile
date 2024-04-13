@@ -14,4 +14,4 @@ COPY . .
 
 EXPOSE 4000
 
-CMD ["node","index.js"]
+CMD ["bash", "-c", "npx prisma migrate dev --name init && node index.js"]
