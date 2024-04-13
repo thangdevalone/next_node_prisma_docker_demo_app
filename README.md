@@ -12,6 +12,7 @@
 ## Prerequisites
 
 Ensure that you have the following installed on your system:
+
 - Docker: [Download Docker](https://www.docker.com/get-started)
 
 ## Running the Docker Setup
@@ -20,12 +21,18 @@ Ensure that you have the following installed on your system:
 
 2. **Navigate to the Project Directory**: Open a terminal or command prompt and navigate to the root directory of the project.
 
-3. **Build Docker Images**: Run the following command to build the Docker images defined in the `compose.yml` file:
+3. **Build Docker Images**: Run the following command to build the Docker images defined in the `compose.yaml` file:
    ```bash
     docker compose build
+   ```
 
 ## Start docker containers
+
+````bash
     docker compose up
+```
 - Add the -d flag at the end to run the containers in detached mode (in the background).
 ```bash
 docker compose up -d
+````
+
