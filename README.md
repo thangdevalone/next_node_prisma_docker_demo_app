@@ -28,11 +28,11 @@ Ensure that you have the following installed on your system:
 
 ## Start docker containers
 
-````bash
+```bash
     docker compose up
 ```
 - Add the -d flag at the end to run the containers in detached mode (in the background).
 ```bash
 docker compose up -d
-````
+```
 
