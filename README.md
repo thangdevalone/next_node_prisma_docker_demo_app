@@ -26,5 +26,5 @@ Ensure that you have the following installed on your system:
 
 ## Start docker containers
     docker compose up
-    Add the -d flag at the end to run the containers in detached mode (in the background).
+- Add the -d flag at the end to run the containers in detached mode (in the background).
     docker compose up -d
