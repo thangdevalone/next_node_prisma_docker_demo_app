@@ -22,8 +22,7 @@ Ensure that you have the following installed on your system:
 
 3. **Build Docker Images**: Run the following command to build the Docker images defined in the `compose.yml` file:
    ```bash
-   docker compose build
+    docker compose build
 
 ## Start docker containers
-    ```bash
     docker compose up
