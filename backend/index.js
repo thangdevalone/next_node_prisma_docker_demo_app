@@ -24,7 +24,7 @@ app.get('/test',(req,res)=>{
 //get all users
 app.get('/users',async (req,res)=>{
     try{
-        const users= await prisma.User.findMany();
+        const users= await prisma.user.findMany();
         res.status(200).json(users);
     } catch (error){
         res.status(500).json({message:error.message})
@@ -83,6 +83,20 @@ app.put('/users/:id', async (req, res) => {
         
         res.status(200).json(user);
  
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
+// delete user by id
+app.delete('/users/:id', async (req, res) => {
+    const userId = parseInt(req.params.id); // Get the id from the URL
+    try {
+        await prisma.user.delete({
+            where: {
+                id: userId,
+            },
+        });
+        res.status(200).json({ message: "User deleted successfully" });
     } catch (error) {
         res.status(500).json({ message: error.message });
     }

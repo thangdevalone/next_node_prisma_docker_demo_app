@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}><p className="fixed top-10 left-1/2 -translate-x-1/2 text-xl font-semibold">Demo thêm sửa xóa thông tin</p>{children}</body>
     </html>
   );
 }
